@@ -1,5 +1,6 @@
 import Header from './components/header/Header'
 import Presentation from './components/presentation/Presentation'
+import Skillsets from './components/skillsets/Skillsets'
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Presentation />
+      <Skillsets />
     </>
   );
 }
