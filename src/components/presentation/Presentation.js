@@ -36,7 +36,7 @@ function Presentation () {
                             <li>Has demonstrated experience working with Agile Methodologies?</li>
                         </ul>
                         <br/>
-                        <p className="soft-right"><b>You're in the right place</b>, here's what to do next:</p>
+                        <p><b>You're in the right place</b>, here's what to do next:</p>
                         <br/>
                     </div>
 
