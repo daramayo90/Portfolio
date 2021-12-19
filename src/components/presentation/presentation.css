@@ -18,12 +18,12 @@
 }
 
 .presentation-intro h1 {
-    font-size: 2.1em;
+    font-size: 1.9em;
     font-weight: bolder;
 }
 
 .presentation-intro h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-top: -15px;
     background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
     background-clip: text;
