@@ -36,7 +36,7 @@ export const Logos = [
     {
         name: 'EJS',
         image: ejs,
-        description: "Knowdelge using Template Engines, such as EJS to connect Express with the front-end"
+        description: "Knowdelge by using Template Engines, such as EJS to connect Express with the front-end"
     },
     {
         name: 'EXPRESS / NPM',
