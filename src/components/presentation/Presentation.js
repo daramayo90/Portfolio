@@ -41,7 +41,7 @@ function Presentation () {
                     </div>
 
                     <div className="presentation-buttons">
-                        <a className="contact-me" href="#">Contact me</a>
+                        <a className="contact-me" href="#contact">Contact me</a>
                         <a className="find-more" href="#">Find out more</a>
                     </div>
                 </div>

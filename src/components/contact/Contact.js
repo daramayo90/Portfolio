@@ -32,10 +32,14 @@ function Contact () {
             e.preventDefault();
             errorSubmit.current.innerText = "Please, validate your errors first";
         }
+        if (email.current.value == "") {
+            e.preventDefault();
+            emailValidation();
+        }
     }
 
     return (
-        <section className="contact">
+        <section id="contact">
             <div className="contact-intro">
                 <h1>Want to work with me?</h1>
                 <p>I’d love to work with you too! Let me know exactly what you need by filling out the contact form here. I’ll get back to you within 24 hours.</p>

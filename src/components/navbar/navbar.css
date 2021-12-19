@@ -4,6 +4,7 @@
 
 .navbar-mobile {
     text-align: right;
+    width: 95%;
 }
 
 .navbar-mobile-burger {
@@ -77,6 +78,7 @@
         display: block;
         text-align: right;
         margin: 20px 0;
+        width: 80%;
     }
 
     .navbar-desktop ul {

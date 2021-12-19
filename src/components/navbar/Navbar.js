@@ -21,7 +21,7 @@ function Navbar () {
                         <ul type="none">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -33,7 +33,7 @@ function Navbar () {
                     <li><a className="navbar-links" href='/home'>Home</a></li>
                     <li><a className="navbar-links" href='/home'>About</a></li>
                     <li><a className="navbar-links" href='/home'>Portfolio</a></li>
-                    <li><a className="navbar-contact" href='/about'>Contact</a></li>
+                    <li><a className="navbar-contact" href='#contact'>Contact</a></li>
                 </ul>
             </nav>
         </section>

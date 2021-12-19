@@ -1,4 +1,4 @@
-.contact {
+#contact {
     width: 90%;
     margin: auto;
 }
@@ -85,7 +85,7 @@
 **/
 
 @media (min-width: 980px) {
-    .contact {
+    #contact {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
