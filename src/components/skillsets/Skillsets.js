@@ -1,9 +1,11 @@
+import './skillsets.css'
+
 function Skillsets () {
     return (
-        <section>
-            <h1>Skillsets</h1>
-            <div>
-                <div>
+        <section className="skillsets">
+            <h1>Skill Sets</h1>
+            <div className="skillsets-container">
+                <div className="skillsets-box">
                     <h3>Front-End</h3>
                     <ul type="none">
                         <li>HTML5</li>
@@ -14,7 +16,7 @@ function Skillsets () {
                     </ul>
                 </div>
 
-                <div>
+                <div className="skillsets-box">
                     <h3>Back-End</h3>
                     <ul type="none">
                         <li>Node.js</li>
@@ -27,7 +29,7 @@ function Skillsets () {
                     </ul>
                 </div>
 
-                <div>
+                <div className="skillsets-box">
                     <h3>Database</h3>
                     <ul type="none">
                         <li>SQL</li>

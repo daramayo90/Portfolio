@@ -1,0 +1,165 @@
+.presentation {
+    width: 90%;
+    margin: auto;
+}
+
+.presentation-profile-div {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.presentation-profile-img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 62% 44% 56% 38% / 51% 49% 48% 52%;
+    opacity: 0.98;
+}
+
+.presentation-intro h1 {
+    font-size: 2.3em;
+    font-weight: bolder;
+}
+
+.presentation-intro h2 {
+    font-size: 1.8em;
+    margin-top: -15px;
+    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgba(217, 70, 239, 0.8);
+    font-weight: bolder;
+}
+
+.presentation-intro p, .presentation-soft p, .presentation-soft li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.presentation-soft ul li {
+    margin: 0 0 8px 30px;
+}
+
+.presentation-buttons {
+    width: 90%;
+    margin: auto;
+}
+
+.presentation-buttons a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 24px;
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.presentation-buttons .contact-me {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    transition: all 0.5s ease 0s;
+}
+
+.presentation-buttons .contact-me:hover {
+    filter: saturate(130%) contrast(150%);
+}
+
+.presentation-buttons .find-more {
+    border: 1px solid rgba(217, 70, 239, 0.8);
+    background: transparent;
+}
+
+.presentation-buttons .find-more:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+}
+
+@media (min-width: 980px) {
+    .presentation {
+        min-width: 1100px;
+        width: 50%;
+    }
+    
+    .presentation-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .presentation-profile-div {
+        width: 30%;
+        order: 1;
+    }
+
+    .presentation-profile-img {
+        width: 140%;
+    }
+
+    .presentation-container {
+        width: 70%;
+    }
+
+    .presentation-intro h1 {
+        font-size: 3.7em;
+    }
+    
+    .presentation-intro h2 {
+        font-size: 3.1em;
+    }
+
+    .presentation-intro p, .presentation-soft p, .presentation-soft li {
+        line-height: 130%;
+    }
+    
+    .presentation-soft ul li {
+        margin: 0 0 1px 60px;
+    }
+
+    .presentation-soft .soft-right {
+        text-align: center;
+    }
+    
+    .presentation-buttons {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .presentation-buttons a {
+        display: inline-block;
+        text-align: center;
+        width: 40%;
+        margin: 0;
+    }
+    
+    .presentation-buttons .contact-me {
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+        transition: all 0.5s ease 0s;
+    }
+    
+    .presentation-buttons .contact-me:hover {
+        filter: saturate(130%) contrast(150%);
+    }
+    
+    .presentation-buttons .find-more {
+        border: 1px solid rgba(217, 70, 239, 0.8);
+        background: transparent;
+    }
+    
+    .presentation-buttons .find-more:hover {
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    }
+}

@@ -1,0 +1,20 @@
+.skillsets {
+    text-align: center;
+}
+
+.skillsets-container {
+    width: 80%;
+    margin: auto;
+}
+
+.skillsets .skillsets-box {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(80, 100, 140);
+    padding: 15px;
+}
