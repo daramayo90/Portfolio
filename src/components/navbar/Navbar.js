@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './navbar.css'
 
 function Navbar () {
-    const [isActive, setActive] = useState();
+    const [isActive, setActive] = useState("false");
 
     const openBurger = () => {
         setActive(!isActive);
