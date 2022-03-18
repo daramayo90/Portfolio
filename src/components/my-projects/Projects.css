@@ -1,23 +1,26 @@
-.skillsets {
+.projects {
     width: 80%;
     margin: auto;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 120px;
+    margin-bottom: 180px;
 }
 
-.skillsets h3 {
+.projects .title {
     font-size: 2.1em;
+    margin: 15px 0;
 }
 
-.slider {
-    height: 30vh;
-    max-width: 600px;
+.projects .text {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.projects .projects-wrapper {
+    max-width: 1200px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
+    margin-top: 120px;
 }
 
 .right-arrow {
@@ -57,21 +60,24 @@
     transform: scale(1.15);
 }
 
-.skillsets-image-container {
+.project-image-container {
+    width: 80%;
+    margin: auto;
     position: relative;
     transition: all 750ms ease-out 1s;
+    margin-top: 60px;
 }
 
-.skillsets-image {
-    width: 80%;
-    max-width: 200px;
+.project-image {
+    width: 100%;
+    border-radius: 15px;
 }
 
-.skillsets-image-container:hover .skillsets-image {
-    animation: animation-logo infinite 1s alternate;
+.projects-image-container:hover .skillsets-image {
+    animation: animation-project infinite 1s alternate;
 }
 
-@keyframes animation-logo {
+@keyframes animation-project {
     from {
         transform: scale(1);
     }
@@ -80,7 +86,7 @@
     }
   }
 
-.skillsets-image-overlay {
+.project-image-overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -91,30 +97,30 @@
     transition: all 750ms;
 }
 
-.skillsets-image-overlay h4 {
+.project-image-overlay h4 {
     text-align: center;
     font-weight: bolder;
     transition: all 950ms;
 }
 
-.skillsets-image-overlay p {
+.project-image-overlay p {
     text-align: center;
     font-weight: 600;
     transition: all 950ms;
 }
 
-.skillsets-image-overlay:hover {
+.project-image-overlay:hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.skillsets-image-overlay:hover h4 {
+.project-image-overlay:hover h4 {
     transform: translateY(40%);
     border-bottom: 1px rgb(68, 70, 168) solid;
     width: 50%;
     margin: auto;
 }
 
-.skillsets-image-overlay:hover p {
+.project-image-overlay:hover p {
     transform: translateY(20%);
 }

@@ -12,7 +12,7 @@ import sequelize from './logos/sequelize.png'
 import sql from './logos/sql.png'
 import typescript from './logos/typescript.png'
 
-export const Logos = [
+export const logos = [
     {
         name: 'API',
         image: api,

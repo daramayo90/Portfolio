@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Logos } from './Logos'
+import { logos } from './Logos'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+
 import './skillsets.css'
 
-function Skillsets ({ logos }) {
+function Skillsets() {
     const [current, setCurrent] = useState(0);
     const [isActive, setActive] = useState(0);
 
@@ -26,20 +27,20 @@ function Skillsets ({ logos }) {
             </div>
 
             <div className="slider">
-                <FaArrowAltCircleLeft className="left-arrow"  onClick={prevSkill}/>
+                <FaArrowAltCircleLeft className="left-arrow" onClick={prevSkill} />
                 <FaArrowAltCircleRight className="right-arrow" onClick={nextSkill} />
 
-                {Logos.map((logo, index) => {
+                {logos.map((logo, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
                             {index === current && (
-                            <div className="skillsets-image-container">
-                                <img src={logo.image} alt={logo.name} className="skillsets-image" />
-                                <div className="skillsets-image-overlay">
-                                    <h4>{logo.name}</h4>
-                                    <p>{logo.description}</p>
+                                <div className="skillsets-image-container">
+                                    <img src={logo.image} alt={logo.name} className="skillsets-image" />
+                                    <div className="skillsets-image-overlay">
+                                        <h4>{logo.name}</h4>
+                                        <p>{logo.description}</p>
+                                    </div>
                                 </div>
-                            </div>
                             )}
                         </div>
                     )
