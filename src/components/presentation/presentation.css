@@ -25,7 +25,7 @@
 .presentation-intro h2 {
     font-size: 1.6em;
     margin-top: -15px;
-    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    background-image: var(--linear-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: rgba(217, 70, 239, 0.8);
@@ -62,8 +62,8 @@
 }
 
 .presentation-buttons .contact-me {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    color: #ffff;
+    background-image: var(--linear-gradient);
     transition: all 0.5s ease 0s;
 }
 
@@ -72,13 +72,13 @@
 }
 
 .presentation-buttons .find-more {
-    border: 1px solid rgba(217, 70, 239, 0.8);
+    border: 1px solid var(--main-color);
     background: transparent;
 }
 
 .presentation-buttons .find-more:hover {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    color: #ffff;
+    background-image: var(--linear-gradient);
 }
 
 /**
@@ -146,22 +146,17 @@
     }
     
     .presentation-buttons .contact-me {
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+        color: #ffff;
+        background-image: var(--linear-gradient);
         transition: all 0.5s ease 0s;
     }
     
     .presentation-buttons .contact-me:hover {
         filter: saturate(130%) contrast(150%);
     }
-    
-    .presentation-buttons .find-more {
-        border: 1px solid rgba(217, 70, 239, 0.8);
-        background: transparent;
-    }
-    
+
     .presentation-buttons .find-more:hover {
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+        color: #ffff;
+        background-image: var(--linear-gradient);
     }
 }

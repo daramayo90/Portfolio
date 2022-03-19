@@ -1,8 +1,7 @@
 .footer {
-    background: linear-gradient(271.33deg, rgba(249, 168, 212, 0.3) 0.97%, rgba(216, 180, 254, 0.3) 55.49%, rgba(129, 140, 248, 0.3) 98.73%);
+    background: var(--linear-gradient);
     padding: 100px;
     width: 100%;
-
 }
 
 .footer-social-media {
@@ -43,9 +42,24 @@
 
 .footer-social-media ul li a .icon {
     position: relative;
-    color: rgb(17, 24, 39);
     transition: .5s;
     z-index: 3;
+}
+
+.fa-github {
+    color: rgb(17, 24, 39);
+}
+
+.fa-linkedin {
+    color: rgb(10, 102, 194);
+}
+
+.fa-google {
+    color: rgb(221, 75, 57);
+}
+
+.fa-whatsapp {
+    color: rgb(35, 189, 91);
 }
 
 .footer-social-media ul li a:hover .icon {
@@ -88,4 +102,6 @@
     width: 100%;
     text-align: center;
     margin-top: 90px;
+    color: #ffff;
+    font-weight: 500;
 }

@@ -12,13 +12,13 @@
 }
 
 .navbar-mobile-burger button {
-    background-color: white;
+    background-color: #ffff;
     border: none
 }
 
 .navbar-mobile .fa-bars {
     margin: 20px 15px 5px 0;
-    color: rgba(217, 70, 239, 0.8);
+    color: var(--main-color);
     font-size: 1.8em;
 }
 
@@ -35,7 +35,7 @@
     opacity: 1;
     visibility: visible;
     transform: skewY(0deg) rotate(0deg) translateY(0px);
-    background: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+    background: var(--linear-gradient);
     box-shadow: rgb(0 0 0 / 25%) 0px 50px 100px, rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset;
     font-weight: 600;
     border-radius: 20px;
@@ -61,11 +61,11 @@
     text-align: center;
     margin: 10px 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffff;
 }
 
 .navbar-mobile-list li a {
-    color: rgb(255, 255, 255);
+    color: #ffff;
     
 }
 
@@ -99,6 +99,7 @@
         padding: .5em .8em;
         position: relative;
         text-decoration: none;
+        color: var(--main-color);
     }
 
     .navbar-desktop .navbar-links::before, .navbar-desktop .navbar-links::after {
@@ -147,8 +148,8 @@
         border: none;
         outline: none;
         border-radius: 10px;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
+        color: #ffff;
+        background-image: var(--linear-gradient);
         transition: all 0.5s ease 0s;
     }
 

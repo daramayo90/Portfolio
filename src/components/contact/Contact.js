@@ -12,7 +12,7 @@ function Contact () {
         const isEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
 
         if (email.current.value == "") {
-            error.current.innerText = "¿A dónde ha ido el email?";
+            error.current.innerText = "Where has the email gone?";
             setErrors(true);
         } else if (!isEmail.test(String(email.current.value).toLowerCase())) {
             error.current.innerText = "Please, enter a valid email to continue";

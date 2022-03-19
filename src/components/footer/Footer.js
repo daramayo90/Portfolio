@@ -12,7 +12,7 @@ function Footer() {
                 </ul>
             </div>
             <div className="copyright">
-                <p>Developed and designed by Damián Aramayo. All rights reserved. Copyright © 2021.</p>
+                <p>Developed and designed by Damián Aramayo. All rights reserved. Copyright © 2022.</p>
             </div>
         </section>
     )
