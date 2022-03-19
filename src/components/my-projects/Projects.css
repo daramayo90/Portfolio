@@ -1,126 +1,237 @@
 .projects {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 180px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 180px;
 }
 
 .projects .title {
-    font-size: 2.1em;
-    margin: 15px 0;
+  font-size: 2.1em;
+  margin: 15px 0;
 }
 
 .projects .text {
-    font-size: 1.5em;
-    margin: 10px 0;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
 .projects .projects-wrapper {
-    max-width: 1200px;
-    position: relative;
-    margin: auto;
-    margin-top: 120px;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
 }
 
 .right-arrow {
-    position: absolute;
-    top: 40%;
-    right: -10px;
-    font-size: 3rem;
-    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
-    color: rgb(255, 255, 255);
-    border-radius: 100% ;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+  position: absolute;
+  top: 40%;
+  right: -10px;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    270.35deg,
+    rgb(99, 102, 241) -28.81%,
+    rgba(217, 70, 239, 0.8) 52.72%,
+    rgb(251, 113, 133) 129.31%
+  );
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
 }
 
 .left-arrow {
-    position: absolute;
-    top: 40%;
-    left: -10px;
-    font-size: 3rem;
-    background-image: linear-gradient(270.35deg, rgb(99, 102, 241) -28.81%, rgba(217, 70, 239, 0.8) 52.72%, rgb(251, 113, 133) 129.31%);
-    color: rgb(255, 255, 255);
-    border-radius: 100% ;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+  position: absolute;
+  top: 40%;
+  left: -10px;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    270.35deg,
+    rgb(99, 102, 241) -28.81%,
+    rgba(217, 70, 239, 0.8) 52.72%,
+    rgb(251, 113, 133) 129.31%
+  );
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
 }
 
 .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
+  opacity: 0;
+  transition-duration: 1s ease;
 }
 
 .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.15);
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.15);
 }
 
 .project-image-container {
-    width: 80%;
-    margin: auto;
-    position: relative;
-    transition: all 750ms ease-out 1s;
-    margin-top: 60px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  transition: all 750ms ease-out 1s;
+  margin-top: 60px;
+}
+
+.project-image-container > .mobile {
+  display: none;
 }
 
 .project-image {
-    width: 100%;
-    border-radius: 15px;
+  display: block;
+  width: 100%;
+  border-radius: 15px;
 }
-
-.projects-image-container:hover .skillsets-image {
-    animation: animation-project infinite 1s alternate;
-}
-
-@keyframes animation-project {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0.8);
-    }
-  }
 
 .project-image-overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    color: rgb(68, 70, 168);
-    opacity: 0;
-    transition: all 750ms;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 100%, transparent);
+  overflow: hidden;
+  transition: 0.5s ease;
 }
 
-.project-image-overlay h4 {
-    text-align: center;
-    font-weight: bolder;
-    transition: all 950ms;
+.project-image-container:hover .project-image-overlay {
+  height: 100%;
 }
 
-.project-image-overlay p {
-    text-align: center;
-    font-weight: 600;
-    transition: all 950ms;
+.project-image-overlay > .text {
+  color: #ffff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
 }
 
-.project-image-overlay:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.7);
+.project-image-overlay > .text > h4 {
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 15px;
 }
 
-.project-image-overlay:hover h4 {
-    transform: translateY(40%);
-    border-bottom: 1px rgb(68, 70, 168) solid;
+.project-image-overlay > .text > p {
+  font-size: 0.8em;
+  white-space: pre-line;
+  vertical-align: bottom;
+  margin-bottom: 30px;
+}
+
+.project-image-overlay > .text > .project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+}
+
+.project-image-overlay > .text > .project-buttons > a > button {
+  background-image: linear-gradient(
+    270.35deg,
+    rgb(99, 102, 241) -28.81%,
+    rgba(217, 70, 239, 0.8) 52.72%,
+    rgb(251, 113, 133) 129.31%
+  );
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 10px 24px;
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 0.7em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.project-image-overlay > .text > .project-buttons > a > button:hover {
+  filter: saturate(130%) contrast(150%);
+}
+
+@media (max-width: 950px) {
+  .project-image-container > .mobile {
+    display: block;
+  }
+
+  .project-image-container > .desktop {
+    display: none;
+  }
+  
+  .project-image-overlay > .text {
+    top: 41%;
+    width: 95%;
+  }
+
+  .project-image-overlay > .text > h4 {
+    font-size: 0.9em;
+  }
+
+  .project-image-overlay > .text > p {
+    font-size: 0.7em;
+  }
+
+  .project-image-overlay > .text > .project-buttons {
     width: 50%;
     margin: auto;
+  }
+
+  .project-image-overlay > .text > .project-buttons > a > button {
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 0.7em;
+  }
 }
 
-.project-image-overlay:hover p {
-    transform: translateY(20%);
+@media (max-width: 720px) {
+    .project-image-overlay > .text > .project-buttons {
+        width: 70%;
+        margin: auto;
+      }
+    }
+
+@media (max-width: 470px) {
+  .project-image-overlay > .text {
+    top: 40%;
+    width: 95%;
+  }
+
+  .project-image-overlay > .text > h4 {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+  }
+
+  .project-image-overlay > .text > p {
+    font-size: 0.5em;
+    margin-bottom: 5px;
+  }
+
+  .project-image-overlay > .text > .project-buttons {
+    margin: auto;
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .project-image-overlay > .text > .project-buttons > a > button {
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 0.5em;
+  }
 }

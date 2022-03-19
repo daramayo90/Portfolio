@@ -32,7 +32,7 @@ function Navbar () {
                 <ul type="none">
                     <li><a className="navbar-links" href='/home'>Home</a></li>
                     <li><a className="navbar-links" href='/home'>About</a></li>
-                    <li><a className="navbar-links" href='/home'>Portfolio</a></li>
+                    <li><a className="navbar-links" href='#portfolio'>Portfolio</a></li>
                     <li><a className="navbar-contact" href='#contact'>Contact</a></li>
                 </ul>
             </nav>
