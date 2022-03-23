@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { list } from './ProjectsList';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft, FaExternalLinkAlt } from 'react-icons/fa';
 
 import './Projects.css';
 
@@ -45,11 +45,12 @@ function Proyects() {
                                                 <h4>{project.name}</h4>
                                                 <p>{project.description}</p>
                                                 <div className="project-buttons">
-                                                    <a href={project.github} target="blank">
-                                                        <button className="github-link">GitHub</button>
-                                                    </a>
+                                                    {!project.name.includes('Viandas') &&
+                                                        <a href={project.github} target="blank">
+                                                            <button className="github-link">GitHub</button>
+                                                        </a>}
                                                     <a href={project.link} target="blank">
-                                                        <button className="project-link">Preview</button>
+                                                        <button className="project-link">Preview <FaExternalLinkAlt className='external-icon' /></button>
                                                     </a>
                                                 </div>
                                             </div>

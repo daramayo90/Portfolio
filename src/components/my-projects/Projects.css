@@ -127,7 +127,7 @@
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  width: 30%;
+  width: 50%;
 }
 
 .project-image-overlay > .text > .project-buttons > a > button {
@@ -149,6 +149,10 @@
 
 .project-image-overlay > .text > .project-buttons > a > button:hover {
   filter: saturate(130%) contrast(150%);
+}
+
+.project-image-overlay > .text > .project-buttons > a > button > .external-icon {
+  font-size: 0.8em;
 }
 
 @media (max-width: 950px) {
