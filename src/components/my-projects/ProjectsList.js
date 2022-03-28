@@ -4,8 +4,8 @@ import netflix from './images/netflix-desktop.jpg';
 import netflixMobile from './images/netflix-mobile.jpg';
 import viandas from './images/viandas-desktop.jpg';
 import viandasMobile from './images/viandas-mobile.jpg';
-import weather from './images/wather-desktop.jpg';
-import weatherMobile from './images/wather-mobile.jpg';
+import weather from './images/weather-desktop.jpg';
+import weatherMobile from './images/weather-mobile.jpg';
 
 export const list = [
     {
