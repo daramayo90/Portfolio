@@ -12,7 +12,7 @@ export const list = [
         name: 'Netflix - React & TypeScript',
         imageDesktop: netflix,
         imageMobile: netflixMobile,
-        description: "The backend has an MCV structure and a connection to a MongoDB cloud database which stores registered users. User login/registration was developed using JWT and hashing passwords.\n\nThe Frontend of this project is built in React JS and TypeScript was used in some components. Axios was used for the connection with the backend.\n\nEach registered user is stored in local storage (without the password), so data is not lost when browsers are refreshed or closed.\n\nRegarding the movies, the information was taken from an external API (TMDB).",
+        description: "100% Responsive.\n\nThe backend has an MCV structure and a connection to a MongoDB cloud database which stores registered users. User login/registration was developed using JWT and hashing passwords.\n\nThe Frontend of this project is built in React JS and TypeScript was used in some components. Axios was used for the connection with the backend.\n\nEach registered user is stored in local storage (without the password), so data is not lost when browsers are refreshed or closed.\n\nRegarding the movies, the information was taken from an external API (TMDB).",
         github: "https://github.com/daramayo90/react-netflix-ts/",
         link: "https://react-netflix-ts.herokuapp.com/"
     },

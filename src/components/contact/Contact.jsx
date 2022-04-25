@@ -1,12 +1,11 @@
 import { useRef, useState } from 'react';
-import './contact.css'
+import './Contact.css'
 
 function Contact () {
     const email = useRef();
     const error = useRef();
     const errorSubmit = useRef();
     const [hasErrors, setError] = useState(false);
-    console.log(hasErrors);
 
     const emailValidation = () => {
         const isEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
@@ -42,7 +41,7 @@ function Contact () {
         <section id="contact">
             <div className="contact-intro">
                 <h1>Want to work with me?</h1>
-                <p>I’d love to work with you too! Let me know exactly what you need by filling out the contact form here. I’ll get back to you within 24 hours.</p>
+                <p>I'd love to work with you too! Let me know exactly what you need by filling out the contact form here. I'll get back to you within 24 hours.</p>
             </div>
 
             <div className="contact-form-container">

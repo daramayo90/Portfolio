@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { logos } from './Logos'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 
-import './skillsets.css'
+import './Skillsets.css'
 
 function Skillsets() {
     const [current, setCurrent] = useState(0);

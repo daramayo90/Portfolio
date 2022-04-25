@@ -1,22 +1,75 @@
-:root {
-  --main-color: #65C7F7;
-  --linear-gradient: linear-gradient(270.35deg, #9CECFB -28.81%, #65C7F7 52.72%, #0052D4 129.31%);
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #4a4a4a;
 }
 
-/*
-:root {
-  --main-color: #86A8E7;
-  --linear-gradient: linear-gradient(270.35deg, #7F7FD5 -28.81%, #86A8E7 52.72%, #91EAE4 129.31%);
+.loading-bars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
 }
 
-:root {
-  --main-color: #65C7F7;
-  --linear-gradient: linear-gradient(270.35deg, #9CECFB -28.81%, #65C7F7 52.72%, #0052D4 129.31%);
+.loading-bars > .bar {
+  height: 30px;
+  width: 0;
+  background: #ffffff;
+  position: relative;
+  margin: 0;
 }
 
-:root {
-  --main-color: #536976;
-  --linear-gradient: linear-gradient(270.35deg, #bbd2c5 -28.81%, #536976 52.72%, #292e49 129.31%);
+.loading-bars > .bar:nth-child(1) {
+  animation: loading 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) infinite;
 }
 
-*/
+.loading-bars > .bar:nth-child(2) {
+  animation: loading 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.1s infinite;
+}
+
+.loading-bars > .bar:nth-child(3) {
+  animation: loading 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite;
+}
+
+.App > .loading.is-loading {
+  position: absolute;
+  width: 0;
+  height: 100vh;
+  background-color: #282c34;
+  z-index: 100;
+  animation: close 0.5s forwards;
+}
+
+@keyframes loading {
+  0% {
+    left: 0;
+    width: 0px;
+  }
+  25% {
+    left: 0;
+    width: 100%;
+  }
+  50% {
+    left: 100%;
+    width: 0px;
+  }
+  75% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 0;
+    width: 0px;
+  }
+}
+
+@keyframes close {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
