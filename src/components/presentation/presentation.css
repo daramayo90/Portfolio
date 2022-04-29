@@ -1,4 +1,5 @@
 .presentation {
+  max-width: 550px;
   width: 90%;
   margin: auto;
   margin-top: 60px;
@@ -6,6 +7,7 @@
 
 .presentation-profile-div {
   width: 55%;
+  max-width: 280px;
   margin: auto;
   text-align: center;
   animation: fadeIn 3s;
@@ -22,7 +24,7 @@
 }
 
 .presentation-profile-img {
-  max-width: 350px;
+  /*max-width: 350px;*/
   width: 100%;
   border-radius: 62% 44% 56% 38% / 51% 49% 48% 52%;
   opacity: 0.98;
@@ -50,14 +52,13 @@
   bottom: 0;
   background-color: #fff;
   transform: translateX(0);
-  transition: transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.95s cubic-bezier(0.694, 0.048, 0.335, 1);
   z-index: 60;
 }
 
 .loading-container > .loading-first-overlay.is-reveal,
 .loading-container > .loading-second-overlay.is-reveal,
-.loading-container > .loading-third-overlay.is-reveal,
-.loading-container > .loading-fourth-overlay.is-reveal {
+.loading-container > .loading-third-overlay.is-reveal {
   opacity: 1;
   transform: translateX(105%);
 }
@@ -72,7 +73,7 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .13em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end);
+  animation: typing 2s steps(40, end);
 }
 
 /* The typing effect */
@@ -157,7 +158,7 @@
   text-align: center;
 }
 
-.presentation-soft > h2 {
+.presentation-soft > .title {
   margin: 20px 0;
 }
 
@@ -166,82 +167,113 @@
 **/
 
 @media (min-width: 980px) {
+  .presentation {
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
+    margin-top: 180px;
+  }
+  
   .presentation-flexbox {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 90%;
-    margin: auto;
   }
-
+  
   .presentation-profile-div {
-    width: 30%;
-    order: 1;
+    order: 2;
+    width: 45%;
+    max-width: 380px;
+    height: auto;
   }
-
+  
   .presentation-profile-img {
-    width: 140%;
+    /*max-width: 480px;*/
+    width: 100%;
   }
-
+  
   .presentation-container {
-    width: 70%;
+    order: 1;
+    width: 55%;
   }
 
   .presentation-intro h1 {
     text-align: left;
-    font-size: 3.1em;
+    font-size: 3.6em;
+    letter-spacing: 0.05em;
   }
 
   .presentation-intro h2 {
     text-align: left;
-    font-size: 2.5em;
+    font-size: 2.1em;
   }
 
-  .presentation-intro p,
-  .presentation-soft p,
-  .presentation-soft li {
-    font-style: normal;
-    font-weight: normal;
+
+  .presentation-intro p {
+    margin: 20px 5px;
+    text-align: left;
   }
 
-  .presentation-soft ul li {
-    margin: 0 0 8px 30px;
-  }
-
-  .presentation-soft ul li {
-    margin: 0 0 1px 60px;
-  }
-
+  
   .presentation-buttons {
-    width: 70%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0;
+    width: 100%;
+    margin: 30px 0 0 5px; 
   }
-
+  
   .presentation-buttons > .contact-me,
   .presentation-buttons > .find-more {
-    display: inline-block;
-    text-align: center;
     width: 30%;
     margin: 0;
     margin-right: 10px;
   }
-
+  
   .presentation-buttons > .contact-me {
     color: #ffff;
     background-image: var(--linear-gradient);
     transition: all 0.5s ease 0s;
   }
-
+  
   .presentation-buttons > .contact-me:hover {
     filter: saturate(130%) contrast(150%);
   }
-
+  
   .presentation-buttons > .find-more:hover {
     color: #ffff;
     background-image: var(--linear-gradient);
   }
+
+  .presentation-flexbox > .loading-container {
+    order: 3;
+  }
+
+  .presentation-soft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 0;
+    text-align: center;
+  }
+
+  .presentation-soft > .title {
+    width: 40%;
+    font-size: 1.4em;
+    line-height: 1.6;
+    letter-spacing: 0.0025em;
+  }
+
+  .presentation-soft > .title > h2 {
+    max-width: 70%;
+  }
+
+  .presentation-soft > .info {
+    padding-left: 20px;
+    width: 50%;
+  }
+  
 }

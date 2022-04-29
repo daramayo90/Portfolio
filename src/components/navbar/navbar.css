@@ -82,14 +82,19 @@
     
 }
 
-@media (min-width: 650px) {
+@media (min-width: 980px) {
+    .navbar.is-loaded {
+        transform: translateY(120%);
+    }
+
     .navbar-mobile {
         display: none;
     }
 
     .navbar-desktop {
-        width: 90%;
         display: block;
+        width: 90%;
+        max-width: 1280px;
         text-align: right;
         margin: auto;
         margin-top: 20px;
@@ -104,26 +109,26 @@
     }
     
     .navbar-desktop ul li {
-        font-size: 20px;
-        margin: 0 10px;
         display: inline-block;
+        margin: 0 10px;
+        font-size: 20px;
         list-style: outside none none;
     }
     
     .navbar-desktop a {
-        padding: .5em .8em;
         position: relative;
-        text-decoration: none;
+        padding: .5em .8em;
         color: var(--main-color);
+        text-decoration: none;
     }
 
     .navbar-desktop .navbar-links::before, .navbar-desktop .navbar-links::after {
         content: '';
-        height: 14px;
-        width: 14px;
         position: absolute;
-        transition: all .35s ease;
+        width: 14px;
+        height: 14px;
         opacity: 0;
+        transition: all .35s ease;
     }
 
     .navbar-desktop .navbar-links::before {
@@ -155,15 +160,15 @@
 
     .navbar-desktop .navbar-contact {
         display: inline-block;
-        text-align: center;
         padding: 10px 17px;
         margin: 5px 0;
-        font-weight: 600;
-        font-size: 19px;
-        border: none;
-        outline: none;
-        border-radius: 10px;
         color: #ffff;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 600;
+        outline: none;
+        border: none;
+        border-radius: 10px;
         background-image: var(--linear-gradient);
         transition: all 0.5s ease 0s;
     }

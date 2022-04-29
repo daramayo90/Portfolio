@@ -5,7 +5,7 @@ function Navbar() {
   useEffect(() => {
     setInterval(() => {
       document.querySelector(".navbar").classList.add('is-loaded');
-    }, 7900);
+    }, 6900);
   }, []);
 
   const [isActive, setActive] = useState(false);

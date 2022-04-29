@@ -9,6 +9,7 @@
 :root {
   --main-color: #4a4a4a;
   --linear-gradient: linear-gradient(270deg,#f06449,#ef3636);
+  --footer-color: linear-gradient(270deg,#e96c53,#f56666);
 }
 
 body {

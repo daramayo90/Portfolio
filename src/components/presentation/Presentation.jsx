@@ -10,7 +10,7 @@ function Presentation() {
     setInterval(() => {
       const titles = document.querySelectorAll(".loading-first-overlay");
       titles.forEach((title) => title.classList.add("is-reveal"));
-    }, 1000);
+    }, 5000);
 
     setInterval(() => {
       const titles = document.querySelectorAll(".loading-second-overlay");
@@ -20,19 +20,13 @@ function Presentation() {
     setInterval(() => {
       const titles = document.querySelectorAll(".loading-third-overlay");
       titles.forEach((title) => title.classList.add("is-reveal"));
-    }, 7000);
-
-    setInterval(() => {
-      const titles = document.querySelectorAll(".loading-fourth-overlay");
-      titles.forEach((title) => title.classList.add("is-reveal"));
-    }, 7500);
+    }, 6500);
   }, []);
 
   return (
     <section className="presentation">
       <div className="presentation-flexbox">
         <div className="presentation-profile-div">
-          <div className="loading-circle-overlay"></div>
           <img
             src={profile}
             className="presentation-profile-img"
@@ -42,13 +36,13 @@ function Presentation() {
 
         <div className="presentation-container">
           <div className="presentation-intro">
-              <h1>Damián Aramayo</h1>
+            <h1>Damián Aramayo</h1>
             <div className="loading-container">
-              <div className="loading-second-overlay"></div>
+              <div className="loading-first-overlay"></div>
               <h2>Full Stack Web Developer</h2>
             </div>
             <div className="loading-container">
-              <div className="loading-third-overlay"></div>
+              <div className="loading-second-overlay"></div>
               <p>
                 Welcome to my portfolio website. I'm a Software Developer with a
                 positive attitude, a strong work ethic, looking for results
@@ -58,7 +52,7 @@ function Presentation() {
           </div>
 
           <div className="loading-container">
-            <div className="loading-fourth-overlay"></div>
+            <div className="loading-third-overlay"></div>
             <div className="presentation-buttons">
               <button className="contact-me">Contact Me</button>
               <button className="find-more">
@@ -67,11 +61,15 @@ function Presentation() {
               </button>
             </div>
           </div>
+        </div>
 
-          <div className="loading-container">
-            <div className="loading-fourth-overlay"></div>
-            <div className="presentation-soft">
-              <h2>Why Hire Me?</h2>
+        <div className="loading-container">
+          <div className="loading-third-overlay"></div>
+          <div className="presentation-soft">
+            <div className="title">
+              <h2>Why would it be a Good Option to Hire Me?</h2>
+            </div>
+            <div className="info">
               <p>
                 Do you need someone who has confidence with problems solving,
                 ability to lead complex or multiple projects, a Business and IT
@@ -81,7 +79,6 @@ function Presentation() {
                 <br />
                 <b>You're in the right place.</b>
               </p>
-              <br />
             </div>
           </div>
         </div>
