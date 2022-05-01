@@ -1,4 +1,4 @@
-import "./Presentation.css";
+import "./presentation.css";
 
 import { useEffect } from "react";
 
