@@ -1,0 +1,120 @@
+.skillsets {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.skillsets h3 {
+    font-size: 2.1em;
+}
+
+.slider {
+    height: 30vh;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 40%;
+    right: -10px;
+    font-size: 3rem;
+    background-image: var(--linear-gradient);
+    color: rgb(255, 255, 255);
+    border-radius: 100% ;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    font-size: 3rem;
+    background-image: var(--linear-gradient);
+    color: rgb(255, 255, 255);
+    border-radius: 100% ;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.15);
+}
+
+.skillsets-image-container {
+    position: relative;
+    transition: all 750ms ease-out 1s;
+}
+
+.skillsets-image {
+    width: 80%;
+    max-width: 200px;
+}
+
+.skillsets-image-container:hover .skillsets-image {
+    animation: animation-logo infinite 1s alternate;
+}
+
+@keyframes animation-logo {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+  }
+
+.skillsets-image-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: rgb(68, 70, 168);
+    opacity: 0;
+    transition: all 750ms;
+}
+
+.skillsets-image-overlay h4 {
+    text-align: center;
+    font-weight: bolder;
+    transition: all 950ms;
+}
+
+.skillsets-image-overlay p {
+    text-align: center;
+    font-weight: 600;
+    transition: all 950ms;
+}
+
+.skillsets-image-overlay:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.skillsets-image-overlay:hover h4 {
+    transform: translateY(40%);
+    border-bottom: 1px rgb(68, 70, 168) solid;
+    width: 50%;
+    margin: auto;
+}
+
+.skillsets-image-overlay:hover p {
+    transform: translateY(20%);
+}
