@@ -2,11 +2,6 @@ import { useState, useEffect } from "react";
 import "./Navbar.css";
 
 function Navbar() {
-  useEffect(() => {
-    setInterval(() => {
-      document.querySelector(".navbar").classList.add('is-loaded');
-    }, 6900);
-  }, []);
 
   const [isActive, setActive] = useState(false);
 
