@@ -1,0 +1,109 @@
+#contact {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-intro {
+    margin-bottom: 20px;
+}
+
+.contact-intro h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+}
+
+.contact-intro p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.contact-form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 16px;
+    background: rgb(245, 245, 245);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.contact-form .error {
+    border: 1px red solid;
+}
+
+.contact-form span {
+    display: block;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 11px 16px 200px 16px;
+    background: rgb(245, 245, 245);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.contact-form-button button {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-image: var(--linear-gradient);
+    transition: all 0.5s ease 0s;
+}
+
+.contact-form-button button:hover {
+    filter: saturate(130%) contrast(150%);
+}
+
+
+/**
+*   Desktop Media Query
+**/
+
+@media (min-width: 980px) {
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+        min-width: 1050px;
+    }
+
+    .contact-intro {
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    .contact-intro h1 {
+        font-size: 3.6em;
+        margin-top: -15px;
+    }
+
+    .contact-form-container {
+        width: 55%;
+    }
+}

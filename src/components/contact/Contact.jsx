@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import './contact.css'
+import './Contact.css'
 
 function Contact () {
     const email = useRef();

@@ -1,4 +1,4 @@
-import "./skillsets.css";
+import "./Skillsets.css";
 
 import Canvas from "./Canvas";
 
