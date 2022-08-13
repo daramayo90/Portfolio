@@ -5,11 +5,13 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Presentation from "./components/presentation/Presentation";
 import Skillsets from "./components/skillsets/Skillsets";
-import Projects from "./components/my-projects/Projects";
+import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import useTheme from "./context/useTheme";
 
 function App() {
+  /* Loading Screen */
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -23,6 +25,9 @@ function App() {
     }, 2000);
   }, []);
 
+  /* Light / Dark Mode */
+  const { theme } = useTheme();
+
   return (
     <>
       {loading ? (
@@ -35,14 +40,14 @@ function App() {
           </div>
         </div>
       ) : (
-        <>
+        <main id={theme}>
           <Navbar />
           <Presentation />
           <Skillsets />
           <Projects />
           <Contact />
           <Footer />
-        </>
+        </main>
       )}
     </>
   );

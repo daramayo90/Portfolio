@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <section className="footer">
+        <footer className="footer">
             <div className="footer-social-media">
                 <ul>
                     <li><a href="https://github.com/daramayo90" target="_blank"><i className="fab fa-github icon"></i></a></li>
@@ -14,7 +14,7 @@ function Footer() {
             <div className="copyright">
                 <p>Developed and designed by Damián Aramayo. All rights reserved. Copyright © 2022.</p>
             </div>
-        </section>
+        </footer>
     )
 }
 

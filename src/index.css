@@ -7,14 +7,18 @@
 }
 
 :root {
-  --main-color: #4a4a4a;
-  --linear-gradient: linear-gradient(270deg,#f06449,#ef3636);
-  --footer-color: linear-gradient(270deg,#e96c53,#f56666);
+  --linear-gradient: linear-gradient(270deg, #f06449, #ef3636);
+  --footer-color: linear-gradient(270deg, #e96c53, #f56666);
+
+  --background-light: rgb(253, 253, 253);
+  --color-light: #0b1d26;
+
+  --background-dark: #0b1d26;
+  --color-dark: rgb(253, 253, 253);
 }
 
 body {
   font-family: "Roboto";
-  color: #4a4a4a;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,4 +27,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration: none;
 }

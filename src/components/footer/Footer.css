@@ -1,7 +1,7 @@
 .footer {
-    background: var(--footer-color);
     padding: 100px;
     width: 100%;
+    border-top: 1px solid var(--color);;
 }
 
 .footer-social-media {
@@ -63,7 +63,7 @@
 }
 
 .footer-social-media ul li a:hover .icon {
-    color: rgb(255, 255, 255);
+    color: var(--color);
     transform: rotateY(360deg);
 }
 
@@ -76,6 +76,10 @@
     height: 100%;
     transition: .5s;
     z-index: 2;
+}
+
+.footer-social-media ul li a:hover i:before {
+    color: white;
 }
 
 .footer-social-media ul li a:hover:before {
@@ -102,6 +106,5 @@
     width: 100%;
     text-align: center;
     margin-top: 90px;
-    color: #ffff;
-    font-weight: 500;
+    color: var(--color);
 }

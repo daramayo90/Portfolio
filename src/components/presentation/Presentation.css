@@ -50,7 +50,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--background-color);
   transform: translateX(0);
   transition: transform 0.95s cubic-bezier(0.694, 0.048, 0.335, 1);
   z-index: 60;
@@ -137,13 +137,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--color);
   background: transparent;
   transition: all 0.2s ease-in-out;
 }
 
-.presentation-buttons > .find-more:hover {
+.presentation-buttons > .find-more a {
+  color: var(--color);
+}
+
+.presentation-buttons > .find-more:hover,
+.presentation-buttons > .find-more:hover a,
+.presentation-buttons > .find-more:hover .icon {
   cursor: pointer;
   color: #ffff;
   background-image: var(--linear-gradient);
@@ -151,6 +156,7 @@
 
 .presentation-buttons > .find-more .icon {
   margin-left: 4px;
+  color: var(--color);
 }
 
 .presentation-soft {

@@ -36,7 +36,7 @@ function Presentation() {
 
         <div className="presentation-container">
           <div className="presentation-intro">
-            <h1>Damián Aramayo</h1>
+            <h1>Damian Aramayo</h1>
             <div className="loading-container">
               <div className="loading-first-overlay"></div>
               <h2>Full Stack Web Developer</h2>
@@ -56,7 +56,7 @@ function Presentation() {
             <div className="presentation-buttons">
               <button className="contact-me">Contact Me</button>
               <button className="find-more">
-                <span>Download CV</span>
+                <a href='/aramayo.pdf' download><span>Download CV</span></a>
                 <BsCloudDownload className="icon" />
               </button>
             </div>

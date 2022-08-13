@@ -1,23 +1,38 @@
-import { useState, useEffect } from "react";
 import "./Navbar.css";
+import { useState, useEffect } from "react";
+import useTheme from "../../context/useTheme";
+
+import { BsFillSunFill, BsMoonStarsFill } from "react-icons/bs";
 
 function Navbar() {
+  const [isActive, setActive] = useState(false);
+
   useEffect(() => {
     setInterval(() => {
-      document.querySelector(".navbar").classList.add('is-loaded');
+      document.querySelector(".navbar").classList.add("is-loaded");
     }, 6900);
   }, []);
 
-  const [isActive, setActive] = useState(false);
-
   const openBurger = () => {
     setActive(!isActive);
+  };
+
+  /* Light / Dark Mode */
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
 
   return (
     <section className="navbar">
       <nav className="navbar-mobile">
         <div className="navbar-mobile-burger">
+        <div className="toggle" onClick={toggleTheme}>            
+            {theme === "light" 
+              ? <BsFillSunFill className="sun" />
+              : <BsMoonStarsFill className="moon" />}
+              </div>
           <button onClick={openBurger}>
             <i className="fas fa-bars"></i>
           </button>
@@ -63,6 +78,13 @@ function Navbar() {
             <a className="navbar-contact" href="#contact">
               Contact
             </a>
+          </li>
+          <li>
+            <div className="toggle" onClick={toggleTheme}>            
+            {theme === "light" 
+              ? <BsFillSunFill className="sun" />
+              : <BsMoonStarsFill className="moon" />}
+              </div>
           </li>
         </ul>
       </nav>
