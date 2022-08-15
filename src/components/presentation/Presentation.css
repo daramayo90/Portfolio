@@ -2,7 +2,7 @@
   max-width: 550px;
   width: 90%;
   margin: auto;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .presentation-profile-div {
@@ -177,7 +177,7 @@
     width: 100%;
     max-width: 920px;
     margin: auto;
-    margin-top: 180px;
+    padding-top: 180px;
   }
   
   .presentation-flexbox {

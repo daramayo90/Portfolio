@@ -24,7 +24,7 @@ function Presentation() {
   }, []);
 
   return (
-    <section className="presentation">
+    <section id="about" className="presentation">
       <div className="presentation-flexbox">
         <div className="presentation-profile-div">
           <img

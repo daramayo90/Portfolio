@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 function Projects() {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       {projectslist.map((project) => {
         return (
           <div className="container" key={project.id}>
