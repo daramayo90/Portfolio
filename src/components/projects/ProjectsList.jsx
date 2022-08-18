@@ -1,6 +1,7 @@
 import netflix from './images/netflix.jpg';
-import calculator from './images/calculator.jpg';
 import weather from './images/weather.jpg';
+import appointments from './images/appointments.jpg';
+import calculator from './images/calculator.jpg';
 import viandas from './images/viandas.jpg';
 
 export const projectslist = [
@@ -15,15 +16,6 @@ export const projectslist = [
     },
     {
         "id": 2,
-        "count": "02",
-        "heading": "React",
-        "head": "Calculator",
-        "description": "A simple calculator using React JS",
-        "image": calculator,
-        "link": "https://daramayo90.github.io/react-calculator/"
-    },
-    {
-        "id": 3,
         "count": "03",
         "heading": "Vanilla Javascript",
         "head": "Weather Web App",
@@ -32,7 +24,25 @@ export const projectslist = [
         "link": "https://free-weather-web-api.herokuapp.com/"
     },
     {
+        "id": 3,
+        "count": "03",
+        "heading": "React & Tailwind CSS",
+        "head": "My Appointments",
+        "description": "Appointments application where I demostrate my knowledge by passing data to a component, use the useState & useEffect hooks with conditional classes, and toggle items by passing the state to a sub-component and using values to hide or show sub-components. This application can delete records, search with a filtered array, set up a sort and add new appointments.",
+        "image": appointments,
+        "link": "https://daramayo90.github.io/appointments-tailwind/"
+    },
+    {
         "id": 4,
+        "count": "02",
+        "heading": "React",
+        "head": "Calculator",
+        "description": "A simple calculator using React JS",
+        "image": calculator,
+        "link": "https://daramayo90.github.io/react-calculator/"
+    },
+    {
+        "id": 5,
         "count": "04",
         "heading": "WordPress",
         "head": "Viandas Cook",
